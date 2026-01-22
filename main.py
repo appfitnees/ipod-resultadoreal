@@ -303,4 +303,5 @@ def main(page: ft.Page):
     page.add(main_layout)
 
 if __name__ == "__main__":
-    ft.app(target=main, assets_dir="assets")
+    # O segredo é o web_renderer=ft.WebRenderer.HTML
+    ft.app(target=main, assets_dir="assets", web_renderer=ft.WebRenderer.HTML)
